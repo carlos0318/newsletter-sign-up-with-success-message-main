@@ -1,0 +1,58 @@
+---
+import '../styles/global.css';
+import '../styles/atoms/buttons.css'
+import Form from './Components/Form.tsx'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="./favicon-32-32.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="md:bg-charcoal-grey bg-white h-screen w-screen grid place-content-center font-roboto text-dark-slate-grey">
+		<main class="h-screen w-screen flex items-center justify-center">
+			<section class="md:w-2/3 w-full h-full md:h-4/5 flex md:flex-row flex-col bg-white rounded-3xl md:p-6 gap-8">
+				<picture class="md:order-2 order-1 flex-1 flex justify-end">
+					<source srcset="../assets/images/illustration-sign-up-desktop.svg" media="(min-width: 600px)">
+					<img src="../assets/images/illustration-sign-up-mobile.svg" alt="" class="md:w-fit w-full md:h-full">
+				</picture>
+
+				<article class="md:order-1 order-2 flex-1 p-6 flex flex-col justify-start md:justify-center h-full">
+					<h1 class="font-bold text-4xl md:text-6xl mb-6">Stay updated!</h1>
+					<p class="mb-6">Join 60,000+ product managers receiving monthly updates on:</p>
+					<div class="flex flex-col gap-4">
+						<div class="flex gap-4">
+							<picture>
+								<img src="assets/images/icon-list.svg" alt="">
+							</picture>
+							<p>Product discovery and building what matters</p>
+						</div>
+						<div class="flex gap-4">
+							<picture>
+								<img src="assets/images/icon-list.svg" alt="">
+							</picture>
+							<p>Measuring to ensure updates are a success</p>
+						</div>
+						<div class="flex gap-4">
+							<picture>
+								<img src="assets/images/icon-list.svg" alt="" />
+							</picture>
+							<p>And much more!</p>
+						</div>
+					</div>
+					<Form client:load />
+				</article>
+			</section>
+		</main>
+	</body>
+</html>

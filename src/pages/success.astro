@@ -1,0 +1,54 @@
+---
+import '../styles/global.css';
+import '../styles/atoms/buttons.css';
+import '../styles/atoms/shadows.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="./favicon-32-32.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="md:bg-charcoal-grey bg-white h-screen w-screen grid place-content-center font-roboto text-dark-slate-grey">
+		<main class="h-screen w-screen flex items-center justify-center">
+			<article class="w-full md:w-4/12 h-full md:h-3/5 flex flex-col p-6 md:p-12 bg-white md:rounded-3xl card-shadow">
+                <div class="flex-1 flex flex-col justify-center gap-8">
+                    <picture>
+                        <img src="assets/images/icon-success.svg" alt="">
+                    </picture>
+                    <h1 class="text-5xl font-bold">Thanks for subscribing!</h1>
+                    <p>A confirmation email has been sent to <span class="font-bold">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription</p>
+                </div>
+                <a
+                    href='/'
+                    class='
+                    text-white
+                    bg-dark-slate-grey
+                    w-full
+                    p-4
+                    mt-6
+                    rounded-lg
+                    font-bold
+                    font-roboto
+                    spacing
+                    tracking-wide
+                    transition-btn
+                    hover-btn
+                    text-center'
+                >
+                    Dismiss message
+                </a>
+            </article>
+		</main>
+	</body>
+</html>
