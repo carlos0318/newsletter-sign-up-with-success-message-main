@@ -30,7 +30,7 @@ function Form() {
     }
 
     setErrors({ ...errors, email: false })
-    window.location.href = '/success'
+    window.location.href = '/newsletter-sign-up-with-success-message-main/success/'
   }
 
   return (

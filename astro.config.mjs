@@ -10,5 +10,6 @@ const BASE = 'newsletter-sign-up-with-success-message-main'
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: LIVE_URL,
-  base: BASE
+  base: BASE,
+  trailingSlash: "always"
 });
